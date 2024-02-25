@@ -1,0 +1,25 @@
+    // v1 = [12,47,35];
+    // v2 = [13,88,15];
+
+
+PROCEDURE dot_product(v1 : INTEGER, v2 : INTEGER)
+VAR
+    ps : INTEGER : = 0;
+    i : INTEGER ;
+BEGIN
+FOR i FROM O TO v1 STEP 1 DO
+    ps += v1[i] * v2[i];
+END FOR
+    Write(ps)
+END
+
+FUNCTION dot_product(v1 : INTEGER, v2 : INTEGER):INTEGER
+VAR
+    ps : INTEGER : = 0;
+    i : INTEGER ;
+BEGIN
+FOR i FROM 0 TO v2 STEP 1 DO
+    ps += v1[i] * v2[i];
+END FOR
+    RETURN ps;
+END
